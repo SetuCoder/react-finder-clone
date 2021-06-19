@@ -1,0 +1,48 @@
+.window-controls {
+  display: flex;
+  align-items: center;
+
+  &:hover {
+    .window-control-icon {
+      opacity: 1 !important;
+    }
+  }
+}
+
+.window-control {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 7px;
+}
+
+@mixin window-control-button($color) {
+  background: var(--color-button-#{$color});
+  border: 1px solid var(--color-button-light-#{$color});
+
+  .window-control-icon {
+    opacity: 0;
+    width: 10px;
+    height: 10px;
+
+    path {
+      stroke: var(--color-button-bold-#{$color});
+      fill: var(--color-button-bold-#{$color});
+    }
+  }
+}
+
+.window-control.close-window {
+  @include window-control-button(red);
+}
+
+.window-control.minimize-window {
+  @include window-control-button(orange);
+}
+
+.window-control.maximize-window {
+  @include window-control-button(green);
+}

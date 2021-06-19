@@ -1,0 +1,30 @@
+@import "../styles/utils.scss";
+
+.navigation-controls {
+  display: flex;
+}
+
+.back-button,
+.forward-button {
+  @extend %menu-bar-button;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 24px;
+  font-size: 11px;
+  font-weight: bold;
+  color: var(--color-text-light);
+
+  &:hover {
+    cursor: auto;
+  }
+
+  &:disabled {
+    color: var(--color-text-lighter);
+    opacity: 0.8;
+  }
+}
+
+.forward-button {
+  margin-left: 1.5px;
+}

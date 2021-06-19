@@ -1,0 +1,46 @@
+#window {
+  display: grid;
+  font-family: "Roboto", sans-serif;
+  background-image: url(./minimal-mojave.jpeg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  height: 100%;
+  margin: 0;
+  letter-spacing: 0.01px;
+}
+
+#finder {
+  display: grid;
+  grid-template-rows: 58px auto 25px;
+  grid-template-columns: 145px minmax(150px, auto);
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+  border-radius: 4px;
+  box-shadow: 0px 0px 20px 0px var(--color-shadow);
+  overflow: hidden;
+  touch-action: manipulation;
+}
+
+#mobile-window {
+  display: grid;
+  background-image: url(./blucc-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  grid-template-columns: 1fr 3fr 1fr;
+  grid-template-rows: 1fr 6fr 1fr;
+  height: 100%;
+  margin: 0;
+  letter-spacing: 0.01px;
+}
+
+#container {
+  flex: 1;
+  justify-content: 'center';
+  background-image: url(./blucc-bg.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding: 8;
+  height: 100%;
+}

@@ -1,0 +1,16 @@
+#files {
+  display: grid;
+  grid-column-gap: 10px;
+  grid-row-gap: 40px;
+  grid-template-columns: repeat(auto-fill, var(--icon-size));
+  grid-auto-rows: var(--icon-size);
+  justify-content: space-evenly;
+
+  padding: 15px 10px;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
+  background: var(--color-background);
+  border: var(--border-width) solid var(--color-border);
+  border-right: none;
+  overflow: scroll;
+}
